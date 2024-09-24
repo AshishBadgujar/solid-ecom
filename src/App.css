@@ -1,0 +1,248 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 80px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-list-nav ul {
+  display: flex;
+}
+.header-list-nav ul li {
+  list-style-type: none;
+  padding: 0 20px;
+  position: relative;
+}
+.header-list-nav ul a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+.header-list-nav ul a:hover,
+.header-list-nav ul a.active {
+  color: #088178;
+  content: '';
+}
+.header-list-icon a {
+  color: #1a1a1a;
+  padding-left: 20px;
+  transition: 0.3s ease;
+}
+.header-list-icon a:hover,
+.header-list-nav ul a.active {
+  color: #088178;
+}
+.header-list-nav ul li a:hover::after,
+.header-list-nav ul li a.active::after {
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* home main styles */
+
+/* feature section styles */
+
+.product-section .pro-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 60px;
+}
+.product-section h1,
+.product-section p {
+  text-align: center;
+}
+.product-section .product-cart {
+  width: 280px;
+  border: 1px solid #ebebeb;
+  padding: 13px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s;
+}
+.product-section .product-cart:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+.product-section .product-cart img {
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+  border-radius: 25px;
+}
+.product-section .product-cart span {
+  color: #969696;
+  font-weight: 500;
+  line-height: 30px;
+}
+.product-section .product-cart h4 A {
+  font-size: 18px;
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+}
+.product-section .product-cart .stars {
+  color: #e6ae2c;
+  padding: 6px 0;
+}
+.product-section .product-cart .price {
+  color: #088178;
+  padding: 4px 0;
+  margin-top: 5px;
+}
+
+/* detailed section styles */
+
+.product-detail-section .pro-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 60px;
+}
+.product-detail-section h1,
+.product-detail-section p {
+  text-align: center;
+}
+.product-detail-section .product-cart {
+  width: 40rem;
+  border: 1px solid #ebebeb;
+  padding: 13px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s;
+}
+.product-detail-section .product-cart:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+.product-detail-section .product-cart img {
+  width: 100%;
+  height: 37rem;
+  border-radius: 25px;
+  object-fit: contain;
+}
+
+.cart-details {
+  width: 40rem;
+  padding: 13px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  position: relative;
+}
+.product-detail-section .cart-details span {
+  color: #969696;
+  font-weight: 500;
+  line-height: 80px;
+  background-color: #c7e9e75e;
+  padding: 10px;
+  border-radius: 4px;
+}
+.product-detail-section .cart-details h4 {
+  font-size: 18px;
+  color: rgb(41, 41, 41);
+}
+.product-detail-section .cart-details p {
+  text-align: left;
+  padding: 6px 0;
+  line-height: 1.5rem;
+}
+.product-detail-section .cart-details .price {
+  color: #088178;
+  padding: 4px 0;
+  margin: 1rem 0;
+}
+/* off banner section styles */
+
+#off-banner {
+  background-image: url(assets/banner/b2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+#off-banner h4 {
+  color: #eaebf0;
+}
+#off-banner h2 {
+  color: #eaebf0;
+  padding: 20px 0;
+}
+
+/* cart page */
+.container {
+  display: grid;
+  grid-template-columns: 60% 25rem;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card {
+  padding: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1010px) {
+  .container {
+    grid-template-columns: 1fr; /* One column layout */
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+.container .product-cart {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.container .product-cart .details {
+  padding-left: 1rem;
+}
+.container .product-cart img {
+  width: 8rem;
+}
+
+.flex-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.checkout-button {
+  font-size: 14px;
+  font-weight: 600px;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.2s;
+  width: 100%;
+}
+.checkout-button:hover {
+  background-color: #088178;
+  color: #fff;
+  /* border: 1px solid #088178; */
+}
